@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="simple_landing_page.css"/>
     <title>Simple_landing_page</title>
+    
+    <!-- swiper-js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
+    <!-- embed css -->
+    <link rel="stylesheet" href="./simple_landing_page.css"/>
 </head>
 <body>
     <nav id="header" class="nav-bar ruddy-skin">
@@ -14,15 +19,15 @@
                 <img src="./img/icon.png" alt="icon">
             </div>
             <div class="nav_container_left align">
-                <div class="nav_items"><a href="">Home</a></div>
-                <div class="nav_items"><a href="">About</a></div>
-                <div class="nav_items"><a href="">Blog</a></div>
-                <div class="nav_items"><a href="">Testimonials</a></div>
+                <div class="nav_items"><a class="font500" href="#home">Home</a></div>
+                <div class="nav_items"><a class="font500" href="#about">About</a></div>
+                <div class="nav_items"><a class="font500" href="#blog">Blog</a></div>
+                <div class="nav_items"><a class="font500" href="#testimonial">Testimonials</a></div>
                 <button class="nav_contact blue-btn btn-padding btn-font btn-border">Contact Us</button>
             </div>
         </div>
     </nav>
-    <div class="main-content txt-align ruddy-skin">
+    <div id="home" class="main-content txt-align ruddy-skin">
         <div class="container">
             <h1 class="content-title mb8">Search engine optimisation &
                 <br>
@@ -37,7 +42,7 @@
     </div>
     <div class="content-wrapper txt-align">
         <div class="container">
-            <section>
+            <section id="about">
                 <div class="top-second-content">
                     <h2 class="mb8 title">How does it works</h2>
                     <p class="content-desc opacity mb8">One theme that serves as an easy-to-use operational toolkit
@@ -48,7 +53,7 @@
                     <div class="catego-container mb100 categ1">
                         <div class="catego-item">
                             <img src="./img/catego1.png" alt="catego1">
-                            <h5 class="mb8 p16">Speed
+                            <h5 class="mb8 p16 font500">Speed
                                 <br>
                                 Optimisation</h5>
                             <p class="mb16 opacity">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
@@ -58,7 +63,7 @@
                     <div class="catego-container mb100 categ2">
                         <div class="catego-item">
                             <img src="./img/catego2.png" alt="catego2">
-                            <h5 class="mb8 p16">SEO and
+                            <h5 class="mb8 p16 font500">SEO and
                                 <br>
                                 Backlinks</h5>
                             <p class="mb16 opacity">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
@@ -68,7 +73,7 @@
                     <div class="catego-container mb100 categ3">
                         <div class="catego-item">
                             <img src="./img/catego3.png" alt="catego3">
-                            <h5 class="mb8 p16">Content
+                            <h5 class="mb8 p16 font500">Content
                                 <br>
                                 Marketing</h5>
                             <p class="mb16 opacity">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
@@ -77,15 +82,15 @@
                     </div>
                 </div>
             </section>
-            <section>
+            <section id="blog">
                 <div class="third-content mgcontent align">
                     <div class="top-third-content plr15 col-2 txt-left">
-                        <h3>We Offer a Full Range
+                        <h3 class="font500">We Offer a Full Range
                             <br>
                             of Digital Marketing Services!</h3>
                         <div class="top-third-wrapper">
                             <p class="third-desc opacity">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
-                            <p class="third-footer mb16 opacity">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer</p>
+                            <p class="font500 mb16 opacity">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer</p>
                         </div>
                     </div>
                     <div class="col-1">
@@ -97,12 +102,12 @@
                         <img src="./img/Group2.png" alt="Group2">
                     </div>
                     <div class="bottom-third-content plr15 col-1 txt-left mb100">
-                        <h3>Leading Digital Agency
+                        <h3 class="font500">Leading Digital Agency
                             <br>
                             for Business Solution.</h3>
                         <div class="bottom-third-wrapper">
                             <p class="third-desc opacity">Power-packed with impressive features and well-optimized, this template is designed to provide the best performance in all circumstances.</p>
-                            <p class="third-footer mb16 pb8 opacity">Its smart features make it a powerful stand-alone website building tool.</p>
+                            <p class="font500 mb16 pb8 opacity">Its smart features make it a powerful stand-alone website building tool.</p>
                         </div>
                         <button class="btn-border btn-padding btn-font blue-btn">Read more</button>
                     </div>
@@ -119,14 +124,14 @@
                             <img src="./img/marketing.png" alt="marketing">
                             <div class="overlay-img align">
                                 <div class="major-desc">
-                                    <h6 class="pb8 plr15 mb8">Know more about Online marketing</h6>
+                                    <h6 class="pb8 plr15 mb8 font500">Know more about Online marketing</h6>
                                     <button class="btn-border">Read more</button>
                                 </div>
                             </div>
                         </div>
                         <div class="major-desc mb16">
-                            <h5>Online Marketing</h5>
-                            <p class="opacity">Seo, Marketing</p>
+                            <h5 class="font500">Online Marketing</h5>
+                            <p class="opacity font500">Seo, Marketing</p>
                         </div>
                     </div>
                     <div class="major-fields plr15">
@@ -140,8 +145,8 @@
                             </div>
                         </div>
                         <div class="major-desc mb16">
-                            <h5>Web Development</h5>
-                            <p class="opacity">Developing, Designing</p>
+                            <h5 class="font500">Web Development</h5>
+                            <p class="opacity font500">Developing, Designing</p>
                         </div>
                     </div>
                     <div class="major-fields plr15">
@@ -149,14 +154,14 @@
                             <img src="./img/software_dev.png" alt="web_design">
                             <div class="overlay-img align">
                                 <div class="major-desc">
-                                    <h6 class="pb8 plr15 mb8">Know more about Web Designing</h6>
+                                    <h6 class="pb8 plr15 mb8 font500">Know more about Web Designing</h6>
                                     <button class="btn-border">Read more</button>
                                 </div>
                             </div>
                         </div>
                         <div class="major-desc mb16">
-                            <h5>Web Designing</h5>
-                            <p class="opacity">Designing, Developing</p>
+                            <h5 class="font500">Web Designing</h5>
+                            <p class="opacity font500">Designing, Developing</p>
                         </div>
                     </div>
                     <div class="major-fields plr15">
@@ -164,81 +169,145 @@
                             <img src="./img/web_design.png" alt="software_dev">
                             <div class="overlay-img align">
                                 <div class="major-desc">
-                                    <h6 class="pb8 plr15 mb8">Know more about Software Development</h6>
+                                    <h6 class="pb8 plr15 mb8 font500">Know more about Software Development</h6>
                                     <button class="btn-border">Read more</button>
                                 </div>
                             </div>
                         </div>
                         <div class="major-desc mb16">
-                            <h5>Software Development</h5>
-                            <p class="opacity">Developing, Designing</p>
+                            <h5 class="font500">Software Development</h5>
+                            <p class="opacity font500">Developing, Designing</p>
                         </div>
                     </div>
                 </div>
             </section>
-            <section>
+            <section id="testimonial">
                 <div class="title-content plr15">
                     <h2 class="mb8 title">What our customers have to say</h2>
                     <p class="content-desc opacity mb8">Lorem ipsum dolor sit amet, tincidunt vestibulum.</p>
                 </div>
-                <div class="owl-carousel">
-                    <div class="owl-carousel-slide">
-                        <div class="profile-container">
-                            <div class="profile-items">
-                                <img src="./img/face1.jpg" alt="face1">
-                                <p>Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
-                                <h6>Tony Martinez</h6>
-                                <h6>Marketing Manager</h6>
+                <div class="swiper mySwiper mb100">
+                        <div class="swiper-wrapper">
+                            <div class="profile-container swiper-slide">
+                                <div class="profile-items">
+                                    <img src="./img/face1.jpg" alt="face1">
+                                    <p class="profile-desc opacity p16">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
+                                    <h6 class="profile-name font500">Tony Martinez</h6>
+                                    <h6 class="profile-job opacity">Marketing Manager</h6>
+                                </div>
+                            </div>
+                            <div class="profile-container swiper-slide">
+                                <div class="profile-items">
+                                    <img src="./img/face6.jpg" alt="face6">
+                                    <p class="profile-desc opacity p16">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
+                                    <h6 class="profile-name font500">Tony Martinez</h6>
+                                    <h6 class="profile-job opacity">Marketing Manager</h6>
+                                </div>
+                            </div>
+                            <div class="profile-container swiper-slide">
+                                <div class="profile-items">
+                                    <img src="./img/face2.jpg" alt="face2">
+                                    <p class="profile-desc opacity p16">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
+                                    <h6 class="profile-name font500">Sophia Armstrong</h6>
+                                    <h6 class="profile-job opacity">Marketing Manager</h6>
+                                </div>
+                            </div>
+                            <div class="profile-container swiper-slide">
+                                <div class="profile-items">
+                                    <img src="./img/face3.jpg" alt="face3">
+                                    <p class="profile-desc opacity p16">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
+                                    <h6 class="profile-name font500">Cody Lambert</h6>
+                                    <h6 class="profile-job opacity">Marketing Manager</h6>
+                                </div>
+                            </div>
+                            <div class="profile-container swiper-slide">
+                                <div class="profile-items">
+                                    <img src="./img/face4.jpg" alt="face4">
+                                    <p class="profile-desc opacity p16">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
+                                    <h6 class="profile-name font500">Cody Lambert</h6>
+                                    <h6 class="profile-job opacity">Marketing Manager</h6>
+                                </div>
+                            </div>
+                            <div class="profile-container swiper-slide">
+                                <div class="profile-items">
+                                    <img src="./img/face2.jpg" alt="face2">
+                                    <p class="profile-desc opacity p16">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
+                                    <h6 class="profile-name font500">Sophia Armstrong</h6>
+                                    <h6 class="profile-job opacity">Marketing Manager</h6>
+                                </div>
+                            </div>
+                            <div class="profile-container swiper-slide">
+                                <div class="profile-items">
+                                    <img src="./img/face5.jpg" alt="face5">
+                                    <p class="profile-desc opacity p16">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
+                                    <h6 class="profile-name font500">Cody Lambert</h6>
+                                    <h6 class="profile-job opacity">Marketing Manager</h6>
+                                </div>
+                            </div>
+                            <div class="profile-container swiper-slide">
+                                <div class="profile-items">
+                                    <img src="./img/face6.jpg" alt="face6">
+                                    <p class="profile-desc opacity p16">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
+                                    <h6 class="profile-name font500">Tony Martinez</h6>
+                                    <h6 class="profile-job opacity">Marketing Manager</h6>
+                                </div>
+                            </div>
+                            <div class="profile-container swiper-slide">
+                                <div class="profile-items">
+                                    <img src="./img/face4.jpg" alt="face4">
+                                    <p class="profile-desc opacity p16">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
+                                    <h6 class="profile-name font500">Cody Lambert</h6>
+                                    <h6 class="profile-job opacity">Marketing Manager</h6>
+                                </div>
                             </div>
                         </div>
-                        <div class="profile-container">
-                            <div class="profile-items">
-                                <img src="./img/face2.jpg" alt="face2">
-                                <p>Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
-                                <h6>Sophia Armstrong</h6>
-                                <h6>Marketing Manager</h6>
-                            </div>
-                        </div>
-                        <div class="profile-container">
-                            <div class="profile-items">
-                                <img src="./img/face3.jpg" alt="face3">
-                                <p>Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
-                                <h6>Cody Lambert</h6>
-                                <h6>Marketing Manager</h6>
-                            </div>
-                        </div>
-                        <div class="profile-container">
-                            <div class="profile-items">
-                                <img src="./img/face4.jpg" alt="face4">
-                                <p>Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
-                                <h6>Cody Lambert</h6>
-                                <h6>Marketing Manager</h6>
-                            </div>
-                        </div>
-                        <div class="profile-container">
-                            <div class="profile-items">
-                                <img src="./img/face5.jpg" alt="face5">
-                                <p>Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
-                                <h6>Cody Lambert</h6>
-                                <h6>Marketing Manager</h6>
-                            </div>
-                        </div>
-                        <div class="profile-container">
-                            <div class="profile-items">
-                                <img src="./img/face6.jpg" alt="face6">
-                                <p>Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer turpis, suspendisse.</p>
-                                <h6>Tony Martinez</h6>
-                                <h6>Marketing Manager</h6>
-                            </div>
-                        </div>
+                        <div class="swiper-pagination mt10"></div>
                     </div>
+            </section>
+            <section>
+                <div class="sixth-content mb100">
+                    <div class="contact-wrapper align">
+                        <h2 class="contact-title font500">Do you have any projects?
+                            <br>
+                            Contact us
+                        </h2>
+                    </div>
+                    <button class="contact-btn btn-padding btn-font btn-border">Contact us</button>
                 </div>
             </section>
-            <section></section>
             <section></section>
             <footer></footer>
         </div>
     </div>
+    <div class="modal">
+        <div class="modal-dialog">
+            <div class="modal-container">
+                <div class="align">
+                    <h2 class="modal-container-tilte font500">Contact Us</h2>
+                </div>
+                <div class="modal-bottom">
+                    <div class="modal-label-wrapper mb16">
+                        <label for="modal_name" class="modal-title mb8">Name</label>
+                        <input required type="text" id="modal_name" placeholder="Name" class="btn-font">
+                    </div>
+                    <div class="modal-label-wrapper mb16">
+                        <label for="modal_email" class="modal-title mb8">Email</label>
+                        <input required type="email" id="modal_email" placeholder="Email" class="btn-font">
+                    </div>
+                    <div class="modal-label-wrapper mb16">
+                        <label for="modal_message" class="modal-title mb8">Message</label>
+                        <textarea id="modal_message" placeholder="Enter your Message" class="btn-font modal-mess"></textarea>
+                    </div>
+                </div>
+                <div class="modal_footer">
+                    <button class="btn-padding btn-font btn-border modal-btn1">Close</button>
+                    <button class="btn-padding btn-font btn-border modal-btn2">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- swiper-js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="simple_landing_page.js"></script>
 </body>
 </html>
