@@ -28,17 +28,20 @@
     
 // fixed-nav
 let fixedNav = document.getElementById('header');
+let resBtnNav = document.querySelector('.nav_btn_res');
 window.addEventListener("scroll",()=>{
     // document.body vs document.documentElement is for different browser
-    if(document.body.scrollTop>400||document.documentElement.scrollTop>400){
+    if(document.body.scrollTop>300||document.documentElement.scrollTop>300){
         fixedNav.classList.add('fixed-nav');
+        resBtnNav.style.backgroundColor='#fff';
     }else{
         fixedNav.classList.remove('fixed-nav');
+        resBtnNav.style.backgroundColor='inherit';
     }
 })
 
 // scroll-smooth when clicking anchor link
-document.querySelectorAll('.nav-items a').forEach(anchor => {
+document.querySelectorAll('.nav-link').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
 
@@ -49,41 +52,29 @@ document.querySelectorAll('.nav-items a').forEach(anchor => {
 });
 
 // scroll-spy
-// document.addEventListener('DOMContentLoaded',function(){
-//     const activeLinks = document.querySelectorAll('.nav-items a');
-//     const activeSections = document.querySelectorAll('.scroll-spy');
-//     const addActive = (link)=>{
-//         activeLinks[link].classList.add('active');
-//     }
-//     const removeActive = (link)=>{
-//         activeLinks[link].classList.remove('active');
-//     }
-//     const removeAllActive = ()=>{
-//         // convert DOM nodes into array and then loop through each element n remove them
-//         [...Array(activeSections.length)].forEach((link)=>removeActive(link));
-//         // for(let i=0;i<activeLinks.length;i++){
-//         //     activeLinks[i].classList.remove('.active');
-//         // }
-//     }
-//     let currentActive = 0;
-//     const sectionMargin=200;
-//     window.addEventListener("scroll",()=>{
-//         const current = activeSections.length-[...activeSections].reverse()
-//         .findIndex(section => window.scrollY >= section.offsetTop - sectionMargin ) - 1
-//         if(current!==currentActive){
-//             removeAllActive();
-//             currentActive=current;
-//             addActive(current);
-//         }
-//     })
-// },false)
+const activeLinks = document.querySelectorAll('.nav-link');
+const activeSections = document.querySelectorAll('.scroll-spy');
+
+window.addEventListener('scroll',()=>{
+    activeSections.forEach(sec=>{
+        let top=window.scrollY;
+        let id= sec.getAttribute('id');
+        
+        if(top>=sec.offsetTop-10&&top+10<=sec.offsetTop+sec.offsetHeight){
+            activeLinks.forEach(link=>{
+                link.classList.remove('active');
+                document.querySelector('.nav-link[href*='+id+']').classList.add('active');
+            })
+        }
+    })
+})
 
 // swiper-review
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
     spaceBetween: 30,
     slidesPerGroup:3,
-    loopFillGroupWithBlank: true,
+    loopFillGroupWithBlank: false,
     grabCursor:true,
     loop:true,
     pagination: {
@@ -94,4 +85,18 @@ var swiper = new Swiper(".mySwiper", {
         enabled: true,
         delay: 4000,
     },
+    breakpoints:{
+        0:{
+            slidesPerView:1,
+            slidesPerGroup:1
+        },
+        600:{
+            slidesPerView:2,
+            slidesPerGroup:2
+        },
+        1200:{
+            slidesPerView:3,
+            slidesPerGroup:3
+        }
+    }
   });

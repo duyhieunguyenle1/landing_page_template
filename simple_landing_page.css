@@ -39,6 +39,15 @@ body{
     font:15px/1.5 'Poppins', sans-serif;
 }
 
+/* trick-tip */
+.anchor-content::before{
+    content:'';
+    display: block;
+    height: 75px;
+    margin-top: -75px;
+    visibility: hidden;
+}
+
 /* common */
 .ruddy-skin{
     background-color: var(--ruddy-skin);
@@ -147,6 +156,22 @@ body{
 .nav-bar .nav_container_right{
     /* cái này để chia đôi header */
     width: 100%;
+    display: flex;
+}
+.nav_container_right img{
+    vertical-align: middle;
+    object-fit: contain;
+}
+.nav_container_right .nav_btn_res{
+    flex-basis: 90%;
+    padding: 4px 12px;
+    margin-left: 30px;
+    text-align: right;
+    background-color: var(--ruddy-skin);
+}
+.nav_btn_res i{
+    font-size: 24px;
+    opacity: 0;
 }
 .nav_container_left .nav_items{
     flex:1;
@@ -461,8 +486,7 @@ body{
 
 /* sixth-content */
 .sixth-content{
-    background:url(./img/contact.jpg);
-    background-size: cover;
+    background:url(./img/contact.jpg) bottom no-repeat;
     padding:83px 0 68px;
 }
 .contact-wrapper{
@@ -498,7 +522,7 @@ body{
     padding: 8px 12px;
     background-color: #eceff3;
     font:14px/1.4 'Poppins',sans-serif;
-    width: 90%;
+    width: 100%;
 }
 .btn-subscribe{
     background-color: var(--black);
@@ -526,7 +550,9 @@ body{
 .media-contact:hover i{
     color:var(--white);
 }
-
+.bottom-link{
+    display: flex;
+}
 /* footer */
 hr{
     border: 0;
