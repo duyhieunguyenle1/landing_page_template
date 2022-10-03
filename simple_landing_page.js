@@ -28,17 +28,17 @@
     
 // fixed-nav
 let fixedNav = document.getElementById('header');
-window.onscroll=()=>{
+window.addEventListener("scroll",()=>{
     // document.body vs document.documentElement is for different browser
     if(document.body.scrollTop>400||document.documentElement.scrollTop>400){
         fixedNav.classList.add('fixed-nav');
     }else{
         fixedNav.classList.remove('fixed-nav');
     }
-}
+})
 
 // scroll-smooth when clicking anchor link
-document.querySelectorAll('.nav-link').forEach(anchor => {
+document.querySelectorAll('.nav-items a').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
 
@@ -49,18 +49,34 @@ document.querySelectorAll('.nav-link').forEach(anchor => {
 });
 
 // scroll-spy
-let activeLinks = document.querySelectorAll('.nav-link');
-let activeSections = document.querySelectorAll('section');
-let addActive = (link)=>{
-    activeLinks[link].classList.add('.active');
-}
-let removeActive = (link)=>{
-    activeLinks[link].classList.remove('.active');
-}
-let removeAllActive = (link)=>{
-    // convert DOM nodes into array and then loop through each element n remove them
-    [...Array(activeSections.length)].forEach((link)=>removeActive(link));
-}
+// document.addEventListener('DOMContentLoaded',function(){
+//     const activeLinks = document.querySelectorAll('.nav-items a');
+//     const activeSections = document.querySelectorAll('.scroll-spy');
+//     const addActive = (link)=>{
+//         activeLinks[link].classList.add('active');
+//     }
+//     const removeActive = (link)=>{
+//         activeLinks[link].classList.remove('active');
+//     }
+//     const removeAllActive = ()=>{
+//         // convert DOM nodes into array and then loop through each element n remove them
+//         [...Array(activeSections.length)].forEach((link)=>removeActive(link));
+//         // for(let i=0;i<activeLinks.length;i++){
+//         //     activeLinks[i].classList.remove('.active');
+//         // }
+//     }
+//     let currentActive = 0;
+//     const sectionMargin=200;
+//     window.addEventListener("scroll",()=>{
+//         const current = activeSections.length-[...activeSections].reverse()
+//         .findIndex(section => window.scrollY >= section.offsetTop - sectionMargin ) - 1
+//         if(current!==currentActive){
+//             removeAllActive();
+//             currentActive=current;
+//             addActive(current);
+//         }
+//     })
+// },false)
 
 // swiper-review
 var swiper = new Swiper(".mySwiper", {
