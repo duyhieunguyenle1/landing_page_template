@@ -147,7 +147,9 @@ body{
 .read-more:hover{
     color:var(--red);
 }
-
+.res-img{
+    max-width: 100%;
+}
 
 /* nav */
 .nav-bar{
