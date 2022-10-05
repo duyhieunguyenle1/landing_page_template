@@ -51,6 +51,39 @@ document.querySelectorAll('.nav-link').forEach(anchor => {
     });
 });
 
+// aos
+    // how aos-library work but this not 100% correct
+const aosRight = document.querySelectorAll('.aos-right');
+const aosLeft = document.querySelectorAll('.aos-left');
+let count=0;
+window.addEventListener('scroll',()=>{
+    let top=window.scrollY;
+    if(count==0){
+        aosRight.forEach(slide=>{
+            if(top<slide.offsetTop){
+                slide.classList.add('slide-right');
+            }
+        })
+        aosLeft.forEach(slide=>{
+            if(top<slide.offsetTop){
+                slide.classList.add('slide-left');
+            }
+        })
+        count++;
+    }
+})
+    // aos-library
+AOS.init({
+    offset: 120, // offset (in px) from the original trigger point
+    delay: 0, // values from 0 to 3000, with step 50ms
+    duration: 1200, // values from 0 to 3000, with step 50ms
+    easing: 'ease', // default easing for AOS animations
+    once: true, // whether animation should happen only once - while scrolling down
+    mirror: false, // whether elements should animate out while scrolling past them
+    anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger 
+    disable: "mobile" // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  });
+
 // scroll-spy
 const activeLinks = document.querySelectorAll('.nav-link');
 const activeSections = document.querySelectorAll('.scroll-spy');

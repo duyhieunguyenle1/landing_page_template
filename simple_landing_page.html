@@ -12,7 +12,10 @@
     <!-- embed css -->
     <link rel="stylesheet" href="./simple_landing_page.css"/>
     <link rel="stylesheet" href="./simple_landing_page_responsive.css"/>
-    
+
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -89,7 +92,7 @@
             </section>
             <section id="blog" class="scroll-spy anchor-content">
                 <div class="third-content mgcontent align responsive_align">
-                    <div class="top-third-content plr15 col-2 txt-left col-full mg-res">
+                    <div class="plr15 col-2 txt-left col-full mg-res aos-right">
                         <h3 class="font500">We Offer a Full Range
                             <br>
                             of Digital Marketing Services!</h3>
@@ -98,15 +101,15 @@
                             <p class="font500 mb16 opacity">Lorem ipsum dolor sit amet, tincidunt vestibulum. Fusce egeabus consectetuer</p>
                         </div>
                     </div>
-                    <div class="col-1 col-full mg-res">
+                    <div class="col-1 col-full mg-res aos-left">
                         <img src="./img/Group1.png" alt="Group1" class="res-img">
                     </div>
                 </div>
                 <div class="third-content mgcontent align responsive_align">
-                    <div class="col-2 plr15 mb100 col-full mg-res">
+                    <div class="col-2 plr15 mb100 col-full mg-res aos-right">
                         <img src="./img/Group2.png" alt="Group2" class="res-img">
                     </div>
-                    <div class="bottom-third-content plr15 col-1 txt-left mb100 col-full mg-res">
+                    <div class="plr15 col-1 txt-left mb100 col-full mg-res aos-left">
                         <h3 class="font500">Leading Digital Agency
                             <br>
                             for Business Solution.</h3>
@@ -124,7 +127,7 @@
                     <p class="content-desc opacity mb8">Lorem ipsum dolor sit amet, tincidunt vestibulum.</p>
                 </div>
                 <div class="fourth-content mgcontent mb100 align">
-                    <div class="major-fields plr15">
+                    <div class="major-fields plr15" data-aos="zoom-in">
                         <div class="major-img-marketing major-fields-box align">
                             <img src="./img/marketing.png" alt="marketing">
                             <div class="overlay-img align">
@@ -139,7 +142,7 @@
                             <p class="opacity font500">Seo, Marketing</p>
                         </div>
                     </div>
-                    <div class="major-fields plr15">
+                    <div class="major-fields plr15" data-aos="zoom-in" data-aos-delay="200">
                         <div class="major-img-webdev major-fields-box align">
                             <img src="./img/web_dev.png" alt="web_dev">
                             <div class="overlay-img align">
@@ -154,7 +157,7 @@
                             <p class="opacity font500">Developing, Designing</p>
                         </div>
                     </div>
-                    <div class="major-fields plr15">
+                    <div class="major-fields plr15" data-aos="zoom-in" data-aos-delay="400">
                         <div class="major-img-webdes major-fields-box align">
                             <img src="./img/software_dev.png" alt="web_design">
                             <div class="overlay-img align">
@@ -169,7 +172,7 @@
                             <p class="opacity font500">Designing, Developing</p>
                         </div>
                     </div>
-                    <div class="major-fields plr15">
+                    <div class="major-fields plr15" data-aos="zoom-in" data-aos-delay="600">
                         <div class="major-img-software major-fields-box align">
                             <img src="./img/web_design.png" alt="software_dev">
                             <div class="overlay-img align">
@@ -272,12 +275,12 @@
             <section>
                 <div class="sixth-content mb100">
                     <div class="contact-wrapper align">
-                        <h2 class="contact-title font500">Do you have any projects?
+                        <h2 class="contact-title font500" data-aos="fade-down">Do you have any projects?
                             <br>
                             Contact us
                         </h2>
                     </div>
-                    <button class="contact-btn btn-padding btn-font btn-border">Contact us</button>
+                    <button class="contact-btn btn-padding btn-font btn-border" data-aos="fade-up">Contact us</button>
                 </div>
             </section>
             <section>
@@ -358,6 +361,9 @@
             </div>
         </div>
     </div>
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
     <!-- swiper-js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="simple_landing_page.js"></script>
