@@ -188,6 +188,9 @@ body{
     width: 100%;
     display: flex;
 }
+.nav_wrapper{
+    display: flex !important;
+}
 .nav_container_right img{
     vertical-align: middle;
     object-fit: contain;

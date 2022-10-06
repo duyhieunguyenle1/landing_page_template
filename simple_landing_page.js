@@ -51,7 +51,7 @@ const closeNavBtn = document.querySelector('.res-close button');
 openBtn.addEventListener('click',()=>{
     contactBtn.style.padding='10px 20px';
     bgBlack.classList.add('side-bar');
-    navOpen.style.display='flex';
+    navOpen.classList.add('nav_wrapper');
     navOpen.classList.add('nav-collapse-container');
     navRes.classList.remove('nav-hide');
 })
@@ -60,15 +60,12 @@ function closeNav(){
     bgBlack.classList.remove('side-bar');
     navRes.classList.add('nav-hide');
     navOpen.classList.remove('nav-collapse-container');
-    navOpen.style.display='none';
+    navOpen.classList.remove('nav_wrapper');
 }
 closeNavBtn.onclick=closeNav;
 window.onresize=()=>{
     if(window.innerWidth>991){
         closeNav();
-        navOpen.style.display='flex';
-    }else {
-        navOpen.style.display='none';
     }
 }
 
