@@ -23,6 +23,14 @@
         margin:28px auto;
     }
 }
+@keyframes slideIn {
+    from{
+        transform:translateX(100%);
+    }
+    to{
+        transform:translateX(0);
+    }
+}
 @keyframes slideRight{
     0%{
         transform:translateX(-100%);
@@ -190,6 +198,7 @@ body{
     margin-left: 30px;
     text-align: right;
     background-color: var(--ruddy-skin);
+    cursor: pointer;
 }
 .nav_btn_res i{
     font-size: 24px;
@@ -310,6 +319,54 @@ body{
     width: 100%;
     resize: vertical;
     overflow-y: auto;
+}
+/* nav-collapse responsive */
+.side-bar::before{
+    content:'';
+    position: fixed;
+    top:0; right: 0; left: 0; bottom: 0;
+    background-color: rgba(0, 0, 0,0.7);
+}
+.nav-collapse-container{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    margin-right:-50px;
+    padding: 50px 0;
+    top:0; bottom: 0;
+    right: 50px;
+    width: 250px;
+    background-color: var(--white);
+    justify-content: flex-start;
+    align-items: flex-start;
+    animation: slideIn ease-in-out .5s;
+    z-index: 20;
+}
+.nav-hide{
+    display: none;
+}
+.nav-collapse-container .res-close{
+    flex:1;
+    text-align: right;
+    font-size: 20px;
+}
+.nav-collapse-container .res-close button{
+    padding-right: 20px;
+    background-color: var(--white);
+    cursor: pointer;
+}
+.nav-collapse-container .nav-collapse-item{
+    display:flex;
+    width:100%;
+    margin-left: 15px;
+}
+.nav-collapse-container .nav_items{
+    font-size:16px;
+    flex:0;
+    padding:15px;
+}
+.nav-collapse-container .btn-res{
+    margin: 2px 10px 0 30px
 }
 
 /* main-content */
