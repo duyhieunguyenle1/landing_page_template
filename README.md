@@ -7,4 +7,4 @@ SECOND PROJECT NEED ONLY NAVBAR COLLAPSE AHEAD (FINALLY DONE)
 
 DEMO: https://duyhieunguyenle1.github.io/simple_landing_page.html
 
-TECHNOLOGY: html,css, plain js and 2 librabry
+TECHNOLOGY: html,css, plain js and 2 library
