@@ -40,6 +40,38 @@ window.addEventListener("scroll",()=>{
     }
 })
 
+// nav-collapse
+const openBtn = document.querySelector('.nav_btn_res');
+const bgBlack = document.querySelector('.nav-bar');
+const navOpen = document.querySelector('.nav_container_left');
+const navRes = document.querySelector('.nav-collapse-item');
+const closeNavBtn = document.querySelector('.res-close button');
+
+    //open-nav
+openBtn.addEventListener('click',()=>{
+    contactBtn.style.padding='10px 20px';
+    bgBlack.classList.add('side-bar');
+    navOpen.style.display='flex';
+    navOpen.classList.add('nav-collapse-container');
+    navRes.classList.remove('nav-hide');
+})
+    // close-nav
+function closeNav(){
+    bgBlack.classList.remove('side-bar');
+    navRes.classList.add('nav-hide');
+    navOpen.classList.remove('nav-collapse-container');
+    navOpen.style.display='none';
+}
+closeNavBtn.onclick=closeNav;
+window.onresize=()=>{
+    if(window.innerWidth>991){
+        closeNav();
+        navOpen.style.display='flex';
+    }else {
+        navOpen.style.display='none';
+    }
+}
+
 // scroll-smooth when clicking anchor link
 document.querySelectorAll('.nav-link').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
