@@ -84,22 +84,25 @@ document.querySelectorAll('.nav-link').forEach(anchor => {
     // how aos-library work but this not 100% correct
 const aosRight = document.querySelectorAll('.aos-right');
 const aosLeft = document.querySelectorAll('.aos-left');
+const about = document.getElementById('about');
+
 let count=0;
 window.addEventListener('scroll',()=>{
-    let top=window.scrollY;
-    if(count==0){
-        aosRight.forEach(slide=>{
-            if(top<slide.offsetTop){
-                slide.classList.add('slide-right');
-            }
-        })
-        aosLeft.forEach(slide=>{
-            if(top<slide.offsetTop){
-                slide.classList.add('slide-left');
-            }
-        })
-        count++;
-    }
+    let top=window.scrollY||document.documentElement.scrollTop;
+    aosRight.forEach(slide=>{
+        if(top+about.offsetWidth>slide.offsetTop){
+            slide.classList.add('slide-right');
+        }
+            console.log(top+about.offsetWidth)
+            console.log("slideRight"+slide.offsetTop)
+    })
+    aosLeft.forEach(slide=>{
+        if(top+about.offsetWidth>slide.offsetTop){
+            slide.classList.add('slide-left');
+        }
+            console.log(top+about.offsetWidth)
+            console.log("slideLeft"+slide.offsetTop)
+    })
 })
     // aos-library
 AOS.init({
