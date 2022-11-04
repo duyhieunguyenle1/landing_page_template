@@ -5,14 +5,18 @@
     let contactBtn = document.querySelector('.nav_contact')
     let closeBtn = document.querySelector('.modal-btn1')
 
-    contactBtn.onclick=()=>{
+    function openModal(){
         modal.classList.add('modal-open');
         document.body.style.overflow='hidden';
+        setConfig(true);
     }
+    contactBtn.onclick=openModal;
+
     // modal-close
     function closeModal(){
         modal.classList.remove('modal-open');
         document.body.style.overflow='auto';
+        setConfig(false);
     }
     
     closeBtn.onclick=closeModal;
@@ -20,6 +24,22 @@
     modalContainer.addEventListener('click',(eventClick)=>{
         eventClick.stopPropagation();
     })
+
+    // modal-refreshing
+
+        // localStorage
+
+        const PLAYER_STORAGE_KEY = 'isContactOpen';
+
+        function setConfig(value){
+            localStorage.setItem(PLAYER_STORAGE_KEY,value);
+        }
+
+    window.onload=()=>{
+        // check if modal in localStorage is open
+        if(JSON.parse(localStorage.getItem(PLAYER_STORAGE_KEY)))openModal();
+    }
+
     // modal-textarea
     let modalTextarea = document.querySelector('textarea')
     modalTextarea.oninput = ()=>{
@@ -86,22 +106,17 @@ const aosRight = document.querySelectorAll('.aos-right');
 const aosLeft = document.querySelectorAll('.aos-left');
 const about = document.getElementById('about');
 
-let count=0;
 window.addEventListener('scroll',()=>{
     let top=window.scrollY||document.documentElement.scrollTop;
     aosRight.forEach(slide=>{
         if(top+about.offsetWidth>slide.offsetTop){
             slide.classList.add('slide-right');
         }
-            console.log(top+about.offsetWidth)
-            console.log("slideRight"+slide.offsetTop)
     })
     aosLeft.forEach(slide=>{
         if(top+about.offsetWidth>slide.offsetTop){
             slide.classList.add('slide-left');
         }
-            console.log(top+about.offsetWidth)
-            console.log("slideLeft"+slide.offsetTop)
     })
 })
     // aos-library

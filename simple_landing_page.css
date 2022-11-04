@@ -205,7 +205,6 @@ body{
 }
 .nav_btn_res i{
     font-size: 24px;
-    opacity: 0;
 }
 .nav_container_left .nav_items{
     flex:1;

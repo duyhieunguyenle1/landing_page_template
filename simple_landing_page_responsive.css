@@ -49,8 +49,8 @@
     .nav_container_left{
         display: none;
     }
-    .nav_btn_res i{
-        opacity: 1;
+    .nav_btn_res{
+        display:inline-block;
     }
     .nav_contact{
         margin-left: 0;
@@ -93,9 +93,15 @@
     .container{
         max-width:960px;
     }
+    .nav_btn_res{
+        display:none;
+    }
 }
 @media only screen and (min-width:1200px) {
     .container{
         max-width:1140px;
+    }
+    .nav_btn_res{
+        display:none;
     }
 }
