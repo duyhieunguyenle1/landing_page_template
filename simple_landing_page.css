@@ -13,6 +13,8 @@
     --light_purple:#bbbbf2;
     --cyan:#5eb6b3;
     --gray:#6c757d;
+    --green:#47d864;
+    --red-light:#ff623d;
 }
 
 @keyframes slide {
@@ -609,7 +611,7 @@ body{
     padding: 8px 12px;
     background-color: #eceff3;
     font:14px/1.4 'Poppins',sans-serif;
-    width: 100%;
+    width: 90%;
 }
 .btn-subscribe{
     background-color: var(--black);
@@ -662,4 +664,72 @@ hr{
 }
 .footer-wrapper:last-child{
     text-align: right;
+}
+
+/* toast */
+
+#toast{
+    position: fixed;
+    top:32px;
+    right: 32px;
+    z-index: 99;
+}
+.toast{
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    width: 500px;
+    border-left: 4px solid #000;
+    background-color: #fff;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.08);
+    transition: all linear .3s;
+}
+.toast + .toast {
+    margin-top: 24px;
+}
+@keyframes toastSlideIn {
+    from{
+        opacity: 0;
+        transform: translateX(calc(100% + 32px));
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes toastFadeOut {
+    to{
+        opacity: 0;
+    }
+}
+.toast__icon{
+    font-size: 28px;
+    padding: 28px 16px;
+}
+.toast__body{
+    flex:1;
+}
+.toast__msg{
+    margin-top: 8px;
+    opacity: 0.6;
+}
+.toast__close{
+    padding:28px 16px 28px 0;
+    font-size: 25px;
+    opacity: 0.4;
+    cursor: pointer;
+}
+.toast--success{
+    border-color: var(--green);
+}
+.toast--success .toast__icon{
+    color: var(--green);
+}
+.toast--error{
+    border-color: var(--red-light);
+}
+.toast--error .toast__icon{
+    color: var(--red-light);
 }

@@ -1,3 +1,25 @@
+// import toast from other file
+import toast,{showSuccessToast,showErrorToast} from './toast.js';
+    // declare global module
+    window.showSuccessToast=showSuccessToast;
+    window.showErrorToast=showErrorToast;
+    window.toast=toast;
+
+// toast
+const btnSub = document.querySelector('.btn-subscribe');
+const formValue = document.forms['form-contact']["email"];
+
+btnSub.onclick=function(){
+    if(formValue.value==""){
+        showErrorToast();
+        btnSub.setAttribute('type','button');
+    }else{
+        // when input form gets a value then button type -> submit 
+        btnSub.setAttribute('type','submit');
+        showSuccessToast();
+    }
+}
+
 // modal-toggle
     // modal-open
     let modal = document.querySelector('.modal')

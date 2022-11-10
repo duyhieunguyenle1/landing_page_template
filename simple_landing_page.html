@@ -322,8 +322,10 @@
                     <div class="seventh-wrapper mb100">
                         <h5 class="title-items font500 pb8 mb8">Get in Touch</h5>
                         <p class="opacity mb16">Don't miss any updates of our new templates and extensions.!</p>
-                        <input type="email" class="email-contact mb16" placeholder="Email id">
-                        <button class="btn-font btn-padding btn-border btn-subscribe">Subscribe</button>
+                        <form name="form-contact">
+                            <input type="email" name="email" class="email-contact mb16" placeholder="Email id">
+                            <button class="btn-font btn-padding btn-border btn-subscribe" type="button">Subscribe</button>
+                        </form>
                     </div>
                     <div class="seventh-wrapper mb100">
                         <h5 class="title-items font500 pb8 mb8">Our Guidelines</h5>
@@ -391,11 +393,17 @@
         </div>
     </div>
 
+    <!-- toast -->
+    <div id="toast"></div>
+
     <!-- aos -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>AOS.init();</script>
+    
     <!-- swiper-js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script src="simple_landing_page.js"></script>
+    
+    <!-- embed-js -->
+    <script type="module" src="./simple_landing_page.js"></script>
 </body>
 </html>
