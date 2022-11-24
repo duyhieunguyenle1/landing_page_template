@@ -1,5 +1,5 @@
 // import toast from other file
-import toast,{showSuccessToast,showErrorToast} from './toast.js';
+import toast,{showSuccessToast,showErrorToast} from './js/toast.js';
     // declare global module
     window.showSuccessToast=showSuccessToast;
     window.showErrorToast=showErrorToast;
