@@ -573,7 +573,7 @@ body{
 
 /* sixth-content */
 .sixth-content{
-    background:url(/img/contact.jpg) bottom no-repeat;
+    background:url(./img/contact.jpg) bottom no-repeat;
     padding:83px 0 68px;
 }
 .contact-wrapper{
