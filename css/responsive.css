@@ -1,1 +1,127 @@
-@media only screen and (max-width:767px){.container{max-width:75%}.nav-bar .container{max-width:90%}.fourth-content{flex-wrap:wrap}.fourth-content .major-fields,.seventh-wrapper{flex:0 0 100%;max-width:100%;margin-bottom:16px}.bottom-second-content{flex-direction:column}.catego-item{flex-basis:100%}}@media only screen and (max-width:575px){.container{padding:0 30px;max-width:100%}.nav-bar{padding:25px 0}.modal-container{width:336px}#toast{max-width:70%}.toast{width:100%}}@media only screen and (min-width:768px) and (max-width:991px){.container{max-width:720px}.fourth-content .major-fields,.seventh-wrapper{flex:0 0 50%;max-width:50%;margin-bottom:16px}}@media only screen and (max-width:991px){.nav_container_left{display:none}.nav_btn_res{display:inline-block}.nav_contact{margin-left:0}.fourth-content,.seventh-content{flex-wrap:wrap}.footer-wrapper p,.seventh-content .seventh-wrapper{text-align:center}.responsive_align{flex-direction:column}.responsive_align:last-child{flex-direction:column-reverse}.mb100,.mg-res{margin-bottom:75px}.col-full{flex:0 0 100%;max-width:100%}.bottom-link{align-items:center;justify-content:center}}@media only screen and (min-width:992px) and (max-width:1199px){.container{max-width:960px}.nav_btn_res{display:none}}@media only screen and (min-width:1200px){.container{max-width:1140px}.nav_btn_res{display:none}}
+/* responsive */
+
+    /* tablet */
+    @media only screen and (max-width:767px) {
+        .container{
+            max-width: 75%;
+        }
+        .nav-bar .container{
+            max-width: 90%;
+        }
+        .fourth-content{
+            flex-wrap: wrap;
+        }
+        .seventh-wrapper,
+        .fourth-content .major-fields{
+            flex:0 0 100%;
+            max-width: 100%;
+            margin-bottom: 16px;
+        }
+        .bottom-second-content{
+            flex-direction: column;
+        }
+        .catego-item{
+            flex-basis: 100%;
+        }
+    }
+    
+        /* mobile */
+    @media only screen and (max-width:575px) {
+        .container{
+            padding: 0 30px;
+            max-width: 100%;
+        }
+        .nav-bar{
+            padding:25px 0;
+        }
+        /* limit size toast so its not resize 500px */
+        .modal-container{
+            width:336px;
+        }
+        #toast{
+            max-width: 70%;
+        }
+        .toast{
+            width: 100%;
+        }
+    }
+    
+        /* ipad */
+    @media only screen and (min-width:768px) and (max-width:991px) {
+        .container{
+            max-width: 720px;
+        }
+        .seventh-wrapper,
+        .fourth-content .major-fields{
+            flex:0 0 50%;
+            max-width: 50%;
+            margin-bottom: 16px;
+        }
+    }
+    
+    /* common for screen < 992px */
+    @media only screen and (max-width:991px){
+        /* responsive nav */
+        .nav_container_left{
+            display: none;
+        }
+        .nav_btn_res{
+            display:inline-block;
+        }
+        .nav_contact{
+            margin-left: 0;
+        }
+        /* responsive content 2 and 5 */
+        .seventh-content,
+        .fourth-content{
+            flex-wrap: wrap;
+        }
+        .seventh-content .seventh-wrapper{
+            text-align: center;
+        }
+        /* responsive blog */
+        .responsive_align{
+            flex-direction: column;
+        }
+        .responsive_align:last-child{
+            flex-direction: column-reverse;
+        }
+        .mg-res,
+        .mb100{
+            margin-bottom: 75px;
+        }
+        .col-full{
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+        /* align contact icon */
+        .bottom-link{
+            align-items: center;
+            justify-content: center;
+        }
+        /* align footer */
+        .footer-wrapper p{
+            text-align: center;
+        }
+    }
+    
+        /* mini-screen-pc */
+    @media only screen and (min-width:992px) and (max-width:1199px) {
+        .container{
+            max-width:960px;
+        }
+        .nav_btn_res{
+            display:none;
+        }
+    }
+    
+        /* pc */
+    @media only screen and (min-width:1200px) {
+        .container{
+            max-width:1140px;
+        }
+        .nav_btn_res{
+            display:none;
+        }
+    }
+    

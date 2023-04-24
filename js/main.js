@@ -1,1 +1,203 @@
-const _0x181ca8=_0x2681;(function(_0x1e2bed,_0x367f09){const _0x141b09=_0x2681,_0x3b6f16=_0x1e2bed();while(!![]){try{const _0x1f77be=-parseInt(_0x141b09(0x18a))/0x1*(parseInt(_0x141b09(0x184))/0x2)+parseInt(_0x141b09(0x156))/0x3+-parseInt(_0x141b09(0x152))/0x4*(parseInt(_0x141b09(0x14f))/0x5)+parseInt(_0x141b09(0x13f))/0x6+-parseInt(_0x141b09(0x187))/0x7*(parseInt(_0x141b09(0x186))/0x8)+parseInt(_0x141b09(0x162))/0x9*(-parseInt(_0x141b09(0x183))/0xa)+parseInt(_0x141b09(0x140))/0xb*(parseInt(_0x141b09(0x17f))/0xc);if(_0x1f77be===_0x367f09)break;else _0x3b6f16['push'](_0x3b6f16['shift']());}catch(_0x3baf3a){_0x3b6f16['push'](_0x3b6f16['shift']());}}}(_0x296b,0x32b77));import _0xe06f8c,{showSuccessToast,showErrorToast}from'./toast.js';window[_0x181ca8(0x170)]=showSuccessToast,window[_0x181ca8(0x179)]=showErrorToast,window['toast']=_0xe06f8c;const btnSub=document[_0x181ca8(0x16a)](_0x181ca8(0x13e)),formValue=document[_0x181ca8(0x13a)][_0x181ca8(0x167)][_0x181ca8(0x144)];btnSub[_0x181ca8(0x164)]=function(){const _0x86b28e=_0x181ca8;formValue[_0x86b28e(0x155)]==''?(showErrorToast(),btnSub[_0x86b28e(0x17a)](_0x86b28e(0x158),'button')):(btnSub['setAttribute'](_0x86b28e(0x158),_0x86b28e(0x18b)),showSuccessToast());};let modal=document[_0x181ca8(0x16a)]('.modal'),modalContainer=document['querySelector'](_0x181ca8(0x159)),contactBtn=document[_0x181ca8(0x16a)](_0x181ca8(0x180)),closeBtn=document['querySelector']('.modal-btn1');function _0x296b(){const _0x115b74=['getElementById','email','auto','offsetTop','overflow','.nav_btn_res','.nav-bar','addEventListener','.mySwiper','.nav-link[href*=','getAttribute','onload','2520gXPYUB','offsetHeight','init','2616EICmgf','modal-open','about','value','812475NavqhV','hidden','type','.modal-container','innerWidth','height','nav_wrapper','scroll','body','classList','onresize','active','792oWcTmI','click','onclick','backgroundColor','.res-close\x20button','form-contact','.nav_container_left','offsetWidth','querySelector','slide-right','#fff','documentElement','.swiper-pagination','add','showSuccessToast','setItem','getItem','preventDefault','oninput','fixed-nav','smooth','textarea','mobile','showErrorToast','setAttribute','scrollTop','inherit','querySelectorAll','style','12zesSnx','.nav_contact','padding','slide-left','26770zRsyrn','2cnFMlS','scrollY','74904cFMeFO','259kbRcfQ','.nav-link','stopPropagation','389618MUfgQX','submit','isContactOpen','forEach','forms','ease','nav-collapse-container','remove','.btn-subscribe','1718742rBDicV','10468634PSQoYM','.aos-left','nav-hide'];_0x296b=function(){return _0x115b74;};return _0x296b();}function _0x2681(_0x5d2bdf,_0x55aad7){const _0x296b36=_0x296b();return _0x2681=function(_0x2681dd,_0x260541){_0x2681dd=_0x2681dd-0x13a;let _0x13334a=_0x296b36[_0x2681dd];return _0x13334a;},_0x2681(_0x5d2bdf,_0x55aad7);}function openModal(){const _0x3836aa=_0x181ca8;modal['classList'][_0x3836aa(0x16f)]('modal-open'),document[_0x3836aa(0x15e)][_0x3836aa(0x17e)][_0x3836aa(0x147)]=_0x3836aa(0x157),setConfig(!![]);}contactBtn[_0x181ca8(0x164)]=openModal;function closeModal(){const _0x10279b=_0x181ca8;modal[_0x10279b(0x15f)]['remove'](_0x10279b(0x153)),document[_0x10279b(0x15e)]['style'][_0x10279b(0x147)]=_0x10279b(0x145),setConfig(![]);}closeBtn[_0x181ca8(0x164)]=closeModal,modal[_0x181ca8(0x14a)]('click',closeModal),modalContainer[_0x181ca8(0x14a)](_0x181ca8(0x163),_0x49690a=>{const _0x2e2ffc=_0x181ca8;_0x49690a[_0x2e2ffc(0x189)]();});const PLAYER_STORAGE_KEY=_0x181ca8(0x18c);function setConfig(_0x58d31b){const _0x30cd05=_0x181ca8;localStorage[_0x30cd05(0x171)](PLAYER_STORAGE_KEY,_0x58d31b);}window[_0x181ca8(0x14e)]=()=>{const _0x269da1=_0x181ca8;if(JSON['parse'](localStorage[_0x269da1(0x172)](PLAYER_STORAGE_KEY)))openModal();};let modalTextarea=document[_0x181ca8(0x16a)](_0x181ca8(0x177));modalTextarea[_0x181ca8(0x174)]=()=>{const _0x550469=_0x181ca8;modalTextarea['style'][_0x550469(0x15b)]=modalTextarea['scrollHeight']+'px';};let fixedNav=document[_0x181ca8(0x143)]('header'),resBtnNav=document[_0x181ca8(0x16a)](_0x181ca8(0x148));window[_0x181ca8(0x14a)](_0x181ca8(0x15d),()=>{const _0xc3c69a=_0x181ca8;document['body'][_0xc3c69a(0x17b)]>0x12c||document['documentElement'][_0xc3c69a(0x17b)]>0x12c?(fixedNav['classList'][_0xc3c69a(0x16f)]('fixed-nav'),resBtnNav[_0xc3c69a(0x17e)][_0xc3c69a(0x165)]=_0xc3c69a(0x16c)):(fixedNav[_0xc3c69a(0x15f)][_0xc3c69a(0x13d)](_0xc3c69a(0x175)),resBtnNav[_0xc3c69a(0x17e)][_0xc3c69a(0x165)]=_0xc3c69a(0x17c));});const openBtn=document[_0x181ca8(0x16a)]('.nav_btn_res'),bgBlack=document[_0x181ca8(0x16a)](_0x181ca8(0x149)),navOpen=document[_0x181ca8(0x16a)](_0x181ca8(0x168)),navRes=document['querySelector']('.nav-collapse-item'),closeNavBtn=document['querySelector'](_0x181ca8(0x166));openBtn[_0x181ca8(0x14a)](_0x181ca8(0x163),()=>{const _0x518e08=_0x181ca8;contactBtn[_0x518e08(0x17e)][_0x518e08(0x181)]='10px\x2020px',bgBlack[_0x518e08(0x15f)][_0x518e08(0x16f)]('side-bar'),navOpen[_0x518e08(0x15f)][_0x518e08(0x16f)]('nav_wrapper'),navOpen[_0x518e08(0x15f)][_0x518e08(0x16f)]('nav-collapse-container'),navRes[_0x518e08(0x15f)][_0x518e08(0x13d)](_0x518e08(0x142));});function closeNav(){const _0x21b1df=_0x181ca8;bgBlack[_0x21b1df(0x15f)][_0x21b1df(0x13d)]('side-bar'),navRes[_0x21b1df(0x15f)][_0x21b1df(0x16f)](_0x21b1df(0x142)),navOpen[_0x21b1df(0x15f)][_0x21b1df(0x13d)](_0x21b1df(0x13c)),navOpen[_0x21b1df(0x15f)][_0x21b1df(0x13d)](_0x21b1df(0x15c));}closeNavBtn[_0x181ca8(0x164)]=closeNav,window[_0x181ca8(0x160)]=()=>{const _0x170a20=_0x181ca8;window[_0x170a20(0x15a)]>0x3df&&closeNav();},document['querySelectorAll'](_0x181ca8(0x188))[_0x181ca8(0x18d)](_0x58bc3c=>{const _0x38f96d=_0x181ca8;_0x58bc3c[_0x38f96d(0x14a)](_0x38f96d(0x163),function(_0x36e47c){const _0x412848=_0x38f96d;_0x36e47c[_0x412848(0x173)](),document[_0x412848(0x16a)](this[_0x412848(0x14d)]('href'))['scrollIntoView']({'behavior':_0x412848(0x176)});});});const aosRight=document[_0x181ca8(0x17d)]('.aos-right'),aosLeft=document[_0x181ca8(0x17d)](_0x181ca8(0x141)),about=document[_0x181ca8(0x143)](_0x181ca8(0x154));window['addEventListener']('scroll',()=>{const _0x585aa0=_0x181ca8;let _0x4b9d32=window[_0x585aa0(0x185)]||document[_0x585aa0(0x16d)][_0x585aa0(0x17b)];aosRight[_0x585aa0(0x18d)](_0x23db91=>{const _0x42da7f=_0x585aa0;_0x4b9d32+about[_0x42da7f(0x169)]>_0x23db91[_0x42da7f(0x146)]&&_0x23db91[_0x42da7f(0x15f)]['add'](_0x42da7f(0x16b));}),aosLeft[_0x585aa0(0x18d)](_0x115c1c=>{const _0x9fe045=_0x585aa0;_0x4b9d32+about[_0x9fe045(0x169)]>_0x115c1c[_0x9fe045(0x146)]&&_0x115c1c[_0x9fe045(0x15f)][_0x9fe045(0x16f)](_0x9fe045(0x182));});}),AOS[_0x181ca8(0x151)]({'offset':0x78,'delay':0x0,'duration':0x4b0,'easing':_0x181ca8(0x13b),'once':!![],'mirror':![],'anchorPlacement':'top-bottom','disable':_0x181ca8(0x178)});const activeLinks=document[_0x181ca8(0x17d)]('.nav-link'),activeSections=document[_0x181ca8(0x17d)]('.scroll-spy');window[_0x181ca8(0x14a)](_0x181ca8(0x15d),()=>{const _0x36ff2b=_0x181ca8;activeSections[_0x36ff2b(0x18d)](_0x1841b2=>{const _0x2ea216=_0x36ff2b;let _0x1f1f17=window[_0x2ea216(0x185)],_0x58f18e=_0x1841b2[_0x2ea216(0x14d)]('id');_0x1f1f17>=_0x1841b2[_0x2ea216(0x146)]-0xa&&_0x1f1f17+0xa<=_0x1841b2[_0x2ea216(0x146)]+_0x1841b2[_0x2ea216(0x150)]&&activeLinks[_0x2ea216(0x18d)](_0x2d22b9=>{const _0x47dcd7=_0x2ea216;_0x2d22b9[_0x47dcd7(0x15f)][_0x47dcd7(0x13d)](_0x47dcd7(0x161)),document[_0x47dcd7(0x16a)](_0x47dcd7(0x14c)+_0x58f18e+']')['classList'][_0x47dcd7(0x16f)]('active');});});});var swiper=new Swiper(_0x181ca8(0x14b),{'slidesPerView':0x3,'spaceBetween':0x1e,'slidesPerGroup':0x3,'loopFillGroupWithBlank':![],'grabCursor':!![],'loop':!![],'pagination':{'el':_0x181ca8(0x16e),'clickable':!![]},'autoplay':{'enabled':!![],'delay':0xfa0},'breakpoints':{0x0:{'slidesPerView':0x1,'slidesPerGroup':0x1},0x258:{'slidesPerView':0x2,'slidesPerGroup':0x2},0x4b0:{'slidesPerView':0x3,'slidesPerGroup':0x3}}});
+// import toast from other file
+import toast,{showSuccessToast,showErrorToast} from './js/toast.js';
+    // declare global module
+    window.showSuccessToast=showSuccessToast;
+    window.showErrorToast=showErrorToast;
+
+// toast
+const btnSub = document.querySelector('.btn-subscribe');
+const formValue = document.forms['form-contact']["email"];
+
+btnSub.onclick=function(){
+    if(formValue.value==""){
+        showErrorToast();
+        btnSub.setAttribute('type','button');
+    }else{
+        // when input form gets a value then button type -> submit 
+        btnSub.setAttribute('type','submit');
+        showSuccessToast();
+    }
+}
+
+// modal-toggle
+    // modal-open
+    let modal = document.querySelector('.modal')
+    let modalContainer = document.querySelector('.modal-container')
+    let contactBtn = document.querySelector('.nav_contact')
+    let closeBtn = document.querySelector('.modal-btn1')
+
+    function openModal(){
+        modal.classList.add('modal-open');
+        document.body.style.overflow='hidden';
+        setConfig(true);
+    }
+    contactBtn.onclick=openModal;
+
+    // modal-close
+    function closeModal(){
+        modal.classList.remove('modal-open');
+        document.body.style.overflow='auto';
+        setConfig(false);
+    }
+    
+    closeBtn.onclick=closeModal;
+    modal.addEventListener('click',closeModal)
+    modalContainer.addEventListener('click',(eventClick)=>{
+        eventClick.stopPropagation();
+    })
+
+    // modal-refreshing
+
+        // localStorage
+
+        const PLAYER_STORAGE_KEY = 'isContactOpen';
+
+        function setConfig(value){
+            localStorage.setItem(PLAYER_STORAGE_KEY,value);
+        }
+
+    window.onload=()=>{
+        // check if modal in localStorage is open
+        if(JSON.parse(localStorage.getItem(PLAYER_STORAGE_KEY)))openModal();
+    }
+
+    // modal-textarea
+    let modalTextarea = document.querySelector('textarea')
+    modalTextarea.oninput = ()=>{
+        modalTextarea.style.height=modalTextarea.scrollHeight+"px";
+    }
+    
+// fixed-nav
+let fixedNav = document.getElementById('header');
+let resBtnNav = document.querySelector('.nav_btn_res');
+window.addEventListener("scroll",()=>{
+    // document.body vs document.documentElement is for different browser
+    if(document.body.scrollTop>300||document.documentElement.scrollTop>300){
+        fixedNav.classList.add('fixed-nav');
+        resBtnNav.style.backgroundColor='#fff';
+    }else{
+        fixedNav.classList.remove('fixed-nav');
+        resBtnNav.style.backgroundColor='inherit';
+    }
+})
+
+// nav-collapse
+const openBtn = document.querySelector('.nav_btn_res');
+const bgBlack = document.querySelector('.nav-bar');
+const navOpen = document.querySelector('.nav_container_left');
+const navRes = document.querySelector('.nav-collapse-item');
+const closeNavBtn = document.querySelector('.res-close button');
+
+    //open-nav
+openBtn.addEventListener('click',()=>{
+    contactBtn.style.padding='10px 20px';
+    bgBlack.classList.add('side-bar');
+    navOpen.classList.add('nav_wrapper');
+    navOpen.classList.add('nav-collapse-container');
+    navRes.classList.remove('nav-hide');
+})
+    // close-nav
+function closeNav(){
+    bgBlack.classList.remove('side-bar');
+    navRes.classList.add('nav-hide');
+    navOpen.classList.remove('nav-collapse-container');
+    navOpen.classList.remove('nav_wrapper');
+}
+closeNavBtn.onclick=closeNav;
+window.onresize=()=>{
+    if(window.innerWidth>991){
+        closeNav();
+    }
+}
+
+// scroll-smooth when clicking anchor link
+document.querySelectorAll('.nav-link').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+// aos
+    // how aos-library work but this not 100% correct
+const aosRight = document.querySelectorAll('.aos-right');
+const aosLeft = document.querySelectorAll('.aos-left');
+const about = document.getElementById('about');
+
+window.addEventListener('scroll',()=>{
+    let top=window.scrollY||document.documentElement.scrollTop;
+    aosRight.forEach(slide=>{
+        if(top+about.offsetWidth>slide.offsetTop){
+            slide.classList.add('slide-right');
+        }
+    })
+    aosLeft.forEach(slide=>{
+        if(top+about.offsetWidth>slide.offsetTop){
+            slide.classList.add('slide-left');
+        }
+    })
+})
+    // aos-library
+AOS.init({
+    offset: 120, // offset (in px) from the original trigger point
+    delay: 0, // values from 0 to 3000, with step 50ms
+    duration: 1200, // values from 0 to 3000, with step 50ms
+    easing: 'ease', // default easing for AOS animations
+    once: true, // whether animation should happen only once - while scrolling down
+    mirror: false, // whether elements should animate out while scrolling past them
+    anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger 
+    disable: "mobile" // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  });
+
+// scroll-spy
+const activeLinks = document.querySelectorAll('.nav-link');
+const activeSections = document.querySelectorAll('.scroll-spy');
+
+window.addEventListener('scroll',()=>{
+    activeSections.forEach(sec=>{
+        let top=window.scrollY;
+        let id= sec.getAttribute('id');
+        
+        if(top>=sec.offsetTop-10&&top+10<=sec.offsetTop+sec.offsetHeight){
+            activeLinks.forEach(link=>{
+                link.classList.remove('active');
+                document.querySelector('.nav-link[href*='+id+']').classList.add('active');
+            })
+        }
+    })
+})
+
+// swiper-review
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    slidesPerGroup:3,
+    loopFillGroupWithBlank: false,
+    grabCursor:true,
+    loop:true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    autoplay: {
+        enabled: true,
+        delay: 4000,
+    },
+    breakpoints:{
+        0:{
+            slidesPerView:1,
+            slidesPerGroup:1
+        },
+        600:{
+            slidesPerView:2,
+            slidesPerGroup:2
+        },
+        1200:{
+            slidesPerView:3,
+            slidesPerGroup:3
+        }
+    }
+  });

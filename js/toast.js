@@ -1,1 +1,61 @@
-function _0x3c3d(){const _0x4bc541=['add','\x22></i>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22toast__body\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h3\x20class=\x22toast__title\x22>','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22toast__icon\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22','getElementById','3630396xazxrS','2857278HcVnZV','target','s\x20forwards','style','1144324AbJkSY','</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22toast__close\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fas\x20fa-xmark\x22></i>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20','classList','innerHTML','toastSlideIn\x20ease\x20.3s,toastFadeOut\x20linear\x201s\x20','597HusXom','Anyone\x20with\x20access\x20can\x20view\x20your\x20invited\x20visitors.','createElement','10abnnOt','</h3>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22toast__msg\x22>','toast','5BCXuUx','toast--','Success','closest','.toast__close','Anyone\x20without\x20access\x20cannot\x20view\x20your\x20invited\x20visitors.','div','916961EPBqzr','3844BKcFIv','12921759GOKJNr','5362080CPRJXG','error'];_0x3c3d=function(){return _0x4bc541;};return _0x3c3d();}(function(_0x17a37b,_0xb2441e){const _0x368b15=_0x5c9b,_0x55ffb8=_0x17a37b();while(!![]){try{const _0x4de3d2=-parseInt(_0x368b15(0x11a))/0x1+parseInt(_0x368b15(0x11b))/0x2*(parseInt(_0x368b15(0x10d))/0x3)+parseInt(_0x368b15(0x108))/0x4+parseInt(_0x368b15(0x113))/0x5*(parseInt(_0x368b15(0x104))/0x6)+-parseInt(_0x368b15(0x103))/0x7+-parseInt(_0x368b15(0xfd))/0x8+parseInt(_0x368b15(0x11c))/0x9*(parseInt(_0x368b15(0x110))/0xa);if(_0x4de3d2===_0xb2441e)break;else _0x55ffb8['push'](_0x55ffb8['shift']());}catch(_0x3a6c0d){_0x55ffb8['push'](_0x55ffb8['shift']());}}}(_0x3c3d,0x73e32));function _0x5c9b(_0x2b9041,_0x8c618b){const _0x3c3d53=_0x3c3d();return _0x5c9b=function(_0x5c9b99,_0x4a4b8d){_0x5c9b99=_0x5c9b99-0xfd;let _0x2ef563=_0x3c3d53[_0x5c9b99];return _0x2ef563;},_0x5c9b(_0x2b9041,_0x8c618b);}function toast({title:title='',message:message='',type:type='',duration:_0x93062a}){const _0x44ff09=_0x5c9b,_0x13334d=document[_0x44ff09(0x102)](_0x44ff09(0x112));if(_0x13334d){const _0x120c1e=document[_0x44ff09(0x10f)](_0x44ff09(0x119)),_0x39b034=setTimeout(function(){_0x13334d['removeChild'](_0x120c1e);},_0x93062a+0x3e8);_0x120c1e['onclick']=function(_0x56dcf8){const _0x25f4ac=_0x44ff09;_0x56dcf8[_0x25f4ac(0x105)][_0x25f4ac(0x116)](_0x25f4ac(0x117))&&(_0x13334d['removeChild'](_0x120c1e),clearTimeout(_0x39b034));};const _0x562b6c={'success':'fas\x20fa-circle-check','error':'fa-solid\x20fa-circle-exclamation'},_0x5b9c14=_0x562b6c[type],_0x13e97c=(_0x93062a/0x3e8)['toFixed'](0x2);_0x120c1e[_0x44ff09(0x10a)][_0x44ff09(0xff)]('toast',_0x44ff09(0x114)+type),_0x120c1e[_0x44ff09(0x107)]['animation']=_0x44ff09(0x10c)+_0x13e97c+_0x44ff09(0x106),_0x120c1e[_0x44ff09(0x10b)]=_0x44ff09(0x101)+_0x5b9c14+_0x44ff09(0x100)+title+_0x44ff09(0x111)+message+_0x44ff09(0x109),_0x13334d['appendChild'](_0x120c1e);}}function showSuccessToast(){const _0x4f3b71=_0x5c9b;toast({'title':_0x4f3b71(0x115),'message':_0x4f3b71(0x10e),'type':'success','duration':0xbb8});}function showErrorToast(){const _0x35089a=_0x5c9b;toast({'title':'Error','message':_0x35089a(0x118),'type':_0x35089a(0xfe),'duration':0xbb8});}export default toast;export{showSuccessToast,showErrorToast};
+function toast({
+    title='',
+    message='',
+    type='',
+    duration
+}){
+    const main= document.getElementById('toast');
+    if(main){
+        const toast = document.createElement('div');
+
+        const autoRemove=setTimeout(function(){
+            main.removeChild(toast);
+        },duration+1000)
+
+        toast.onclick=function(e){
+            if(e.target.closest('.toast__close')){
+                main.removeChild(toast);
+                clearTimeout(autoRemove);
+            }
+        }
+        const icons={
+            success:'fas fa-circle-check',
+            error:'fa-solid fa-circle-exclamation'
+        }
+        const icon=icons[type];
+        const delay = (duration/1000).toFixed(2);
+
+        toast.classList.add('toast',`toast--${type}`);
+        toast.style.animation=`slideIn ease .3s,fadeOut linear 1s ${delay}s forwards`;
+        toast.innerHTML=`
+            <div class="toast__icon">
+                <i class="${icon}"></i>
+            </div>
+            <div class="toast__body">
+                <h3 class="toast__title">${title}</h3>
+                <p class="toast__msg">${message}</p>
+            </div>
+            <div class="toast__close">
+                <i class="fas fa-xmark"></i>
+            </div>
+        `
+        main.appendChild(toast);
+    }
+}
+
+function showSuccessToast(){
+    toast({
+        title:'Success',
+        message:'Anyone with access can view your invited visitors.',
+        type:'success',
+        duration:3000
+    })
+}
+function showErrorToast(){
+    toast({
+        title:'Error',
+        message:'Anyone without access cannot view your invited visitors.',
+        type:'error',
+        duration:3000
+    })
+}
