@@ -1,4 +1,4 @@
-function toast({
+export default function toast({
     title='',
     message='',
     type='',
@@ -43,7 +43,7 @@ function toast({
     }
 }
 
-function showSuccessToast(){
+export function showSuccessToast(){
     toast({
         title:'Success',
         message:'Anyone with access can view your invited visitors.',
@@ -51,7 +51,7 @@ function showSuccessToast(){
         duration:3000
     })
 }
-function showErrorToast(){
+export function showErrorToast(){
     toast({
         title:'Error',
         message:'Anyone without access cannot view your invited visitors.',
